@@ -1,6 +1,6 @@
 {
   "name": "scxa-tsne-widget",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "tSNE widget visualizes Single Cell Expression Atlas data",
   "main": "lib/index.js",
   "scripts": {
@@ -30,6 +30,8 @@
     "url": "https://github.com/ebi-gene-expression-group/scxa-tsne-widget.git"
   },
   "dependencies": {
+    "expression-atlas-autocomplete": "^3.0.1",
+    "expression-atlas-experiment-page-tsne-plot": "file:../scxa-experiment-page-tsne-plot-view/expression-atlas-experiment-page-tsne-plot-3.5.0-beta.tgz", // need to change this to specified tsne plot view version once changes have been merged and it is released
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -52,6 +54,7 @@
     "eslint": "^5.10.0",
     "eslint-config-gene-expression": "^0.4.2",
     "fetch-mock": "^7.2.5",
+    "file-loader": "^2.0.0",
     "jest": "^23.6.0",
     "react-test-renderer": "^16.6.3",
     "webpack": "^4.27.1",

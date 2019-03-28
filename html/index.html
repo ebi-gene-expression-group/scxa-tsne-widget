@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/ebi-global.css" type="text/css" media="all" />
     <link rel="stylesheet" href="https://www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.2/fonts.css" type="text/css" media="all" />
 
-    <link rel="stylesheet" href="https://www.ebi.ac.uk/gxa/resources/css/foundation/atlas.css" type="text/css" media="all">
+    <!--<link rel="stylesheet" href="http://localhost:8080/gxa/sc/resources/css/atlas.css" type="text/css" media="all">-->
+    <link rel="stylesheet" href="widget.css" type="text/css" media="all">
 </head>
 
 <body>
-<div id="wrapper" class="row">
+<div id="tsne-widget" class="row">
     <div id="content" class="small-12 columns">
         <div id="target">
         </div>
@@ -19,13 +20,17 @@
 </div>
 </body>
 
-<script src="../dist/vendors.bundle.js"></script>
-<script src="../dist/myComponent.bundle.js"></script>
-<script src="../dist/myComponentDemo.bundle.js"></script>
+<script defer src="../dist/vendors.bundle.js"></script>
+<script defer src="../dist/TSnePlotWidgetDemo.bundle.js"></script>
 
 <!-- Set to http://localhost:8080/gxa/ or http://localhost:8080/gxa_sc/ -- Remember the trailing slash! -->
 <script>
-  myComponent.render({}, 'target')
+  document.addEventListener("DOMContentLoaded", function(event) {
+    TSnePlotWidgetDemo.render({
+      experimentAccession: 'E-MTAB-5061',
+      geneId: 'ENSMUSG00000041147'
+    }, 'target')
+  })
 </script>
 
 </html>

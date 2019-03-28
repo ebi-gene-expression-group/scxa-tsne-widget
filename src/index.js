@@ -1,3 +1,3 @@
-import MyComponent from './MyComponent.js'
+import TSnePlotWidget from './TSnePlotWidget.js'
 
-export default MyComponent
+export default TSnePlotWidget
