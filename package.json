@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "expression-atlas-autocomplete": "^3.0.1",
-    "expression-atlas-experiment-page-tsne-plot": "file:../scxa-experiment-page-tsne-plot-view/expression-atlas-experiment-page-tsne-plot-3.5.0-beta.tgz", // need to change this to specified tsne plot view version once changes have been merged and it is released
+    "expression-atlas-experiment-page-tsne-plot": "file:../scxa-experiment-page-tsne-plot-view/expression-atlas-experiment-page-tsne-plot-3.5.0-beta.tgz",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
