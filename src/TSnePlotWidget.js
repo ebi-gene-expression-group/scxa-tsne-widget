@@ -10,7 +10,7 @@ class TSnePlotWidget extends React.Component {
     super(props)
     this.state = {
       metadata: [],
-      selectedColourBy: `characteristic_inferred_cell_type`,
+      selectedColourBy: `inferred_cell_type`,
       selectedColourByCategory: `metadata`,
       metadataErrorMessage: null,
       loadingMetadata: false,
@@ -37,12 +37,6 @@ class TSnePlotWidget extends React.Component {
         [loadingField]: false,
       })
 
-      if(this.state.metadata.length === 0) {
-        this.setState({
-          selectedColourBy: `7`,
-          selectedColourByCategory: `clusters`
-        })
-      }
     } catch (e) {
       this.setState({
         [errorMessageField]: `${e.name}: ${e.message}`,
@@ -61,7 +55,8 @@ class TSnePlotWidget extends React.Component {
 
   _onChangeColourBy(colourByCategory, colourByValue) {
     this.setState({
-      selectedColourBy: colourByValue
+      selectedColourBy: colourByValue,
+      selectedColourByCategory: colourByCategory
     })
   }
 
@@ -73,9 +68,8 @@ class TSnePlotWidget extends React.Component {
 
     const {height, atlasUrl, suggesterEndpoint} = this.props
     const {wrapperClassName, clusterPlotClassName, expressionPlotClassName} = this.props
-    const {geneId, speciesName, highlightClusters, experimentAccession} = this.props
-    const {ks, perplexities, selectedPerplexity} = this.props
-    const {selectedColourBy, metadata, selectedColourByCategory} = this.state
+    const {geneId, speciesName, ks,selectedPerplexity, highlightClusters, perplexities, experimentAccession} = this.props
+    const {metadata, selectedColourBy, selectedColourByCategory} = this.state
 
     return (
       <div>
@@ -133,17 +127,17 @@ TSnePlotWidget.propTypes = {
 
 
 TSnePlotWidget.defaultProps = {
-  atlasUrl: `https://www.ebi.ac.uk/gxa/sc/`,      //no options will be shown until new metadata endpoint is implemented in prod/ to test change it to localhost
+  atlasUrl: `http://localhost:8080/gxa/sc/`,      //no options will be shown until new metadata endpoint is implemented in prod/ to test change it to localhost
   suggesterEndpoint: `json/suggestions`,
   wrapperClassName: `row expanded`,
   clusterPlotClassName: `small-12 large-6 columns`,
   expressionPlotClassName: `small-12 large-6 columns`,
   speciesName: ``,
   height: 800,
-  selectedPerplexity: 15,
   ks: [],
-  perplexities: [],
-  highlightClusters: []
+  selectedPerplexity: 1,
+  highlightClusters: [],
+  perplexities: []
 }
 
 export default TSnePlotWidget
