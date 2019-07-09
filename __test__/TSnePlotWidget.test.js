@@ -1,13 +1,9 @@
 import React from 'react'
-import Enzyme from 'enzyme'
-import {mount} from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import { mount } from 'enzyme'
 import renderer from 'react-test-renderer'
 
 import TSnePlotWidget from '../src/TSnePlotWidget.js'
 import TSnePlotView from 'expression-atlas-experiment-page-tsne-plot'
-
-Enzyme.configure({ adapter: new Adapter() })
 
 describe(`TSnePlotWidget`, () => {
 
