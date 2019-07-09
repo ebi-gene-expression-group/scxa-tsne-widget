@@ -1,3 +1,1 @@
-import TSnePlotWidget from './TSnePlotWidget.js'
-
-export default TSnePlotWidget
+export { default } from './TSnePlotWidget'
