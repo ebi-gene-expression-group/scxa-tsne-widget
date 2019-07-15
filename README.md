@@ -3,8 +3,6 @@
 
 An easy-to-embed React component to visualise t-SNE plots from Single Cell Expression Atlas.
 
-The widget is designed to show tsne plots for experiment data. It has one dropdown control `Color By` which can be used to color plot by `metadata`.
-
 # Build and test
 1. Install dependencies with NPM or your package manager of choice.
 2. `npx webpack-dev-server`
