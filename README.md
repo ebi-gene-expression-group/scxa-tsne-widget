@@ -1,4 +1,5 @@
 # Single Cell Experssion Atlas t-SNE widget
+[![Build Status](https://travis-ci.com/ebi-gene-expression-group/scxa-tsne-widget.svg?branch=master)](https://travis-ci.com/ebi-gene-expression-group/scxa-tsne-widget) [![Coverage Status](https://coveralls.io/repos/github/ebi-gene-expression-group/scxa-tsne-widget/badge.svg?branch=master)](https://coveralls.io/github/ebi-gene-expression-group/scxa-tsne-widget?branch=master)
 An easy to embed React component to visualise t-SNE plots of Single Cell Expression Atlas.
 
 The widget is designed to show tsne plots for experiment data. It has one dropdown control `Color By` which can be used to color plot by `metadata`.
