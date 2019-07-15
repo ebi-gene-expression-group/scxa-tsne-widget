@@ -30,7 +30,7 @@ props to customise the presentation and layout.
 | height                  | `number` | 800                        | The plots are square-sized if the page is wide enough |
 
 ### Example
-```react
+```jsx
 import React from 'react'
 import TSnePlotWidget from 'ebi-scea-tsne-widget'
 
@@ -54,7 +54,7 @@ After installing dependencies run Webpack to create your JS bundles: `npx webpac
   details
 
 You will need to include these two JS scripts in your page:
-```
+```html
 <script src="../dist/vendors.bundle.js"></script>
 <script src="../dist/TSnePlotWidgetDemo.bundle.js"></script>
 ```
