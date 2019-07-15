@@ -11,9 +11,8 @@ An easy-to-embed React component to visualise t-SNE plots from Single Cell Expre
 
 # API
 ## React
-If you install the component through your package manager of choice and include it as a React component, you need to
-specify two props to determine what combination of experiment/gene to display. Additionally, there are a few optional
-props to customise the presentation and layout.
+If you include it as a React component, you need to specify two props to determine what combination of experiment/gene to
+display. Additionally, there are a few optional props to customise the presentation and layout.
 
 ### Required props
 |         Name        |   Type   |                             Comment                                  |
