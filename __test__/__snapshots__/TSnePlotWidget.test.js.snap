@@ -118,19 +118,56 @@ Array [
       <div
         style={
           Object {
-            "marginTop": "13%",
+            "visibility": "hidden",
           }
         }
-      />
+      >
+        <div
+          className="row margin-bottom-large"
+        >
+          <label>
+            Gene ID, gene name or gene feature
+          </label>
+          <div
+            style={
+              Object {
+                "display": "",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              aria-expanded={false}
+              autoComplete="off"
+              name="geneId"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              role="combobox"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="row text-center scxa-error"
+      >
+        <p>
+          ReferenceError: fetch is not defined
+        </p>
+      </div>
     </div>
   </div>,
   <p>
-    To know more about this experiment please go to
+    To know more about this experiment please go to 
     <a
       href="https://www.ebi.ac.uk/gxa/sc/experiments/E-MTAB-5061"
       target="_blank"
     >
-      Single Cell Expression Atlas
+      Single Cell Expression Atlas 
     </a>
     .
   </p>,
