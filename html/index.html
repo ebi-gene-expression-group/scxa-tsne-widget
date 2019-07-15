@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Single Cell Expression Atlas t-SNE plot widget demo</title>
+  <title>Single Cell Expression Atlas t-SNE plot widget demo</title>
 
-    <link rel="stylesheet" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/ebi-global.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/ebi-global.css" type="text/css" media="all" />
 
-    <style>
-      /* Override EBI VF styles for components that use React-Select */
-      input {
-          height: unset;
-          box-shadow: none;
-          margin: 0;
-      }
+  <style>
+    /* Override EBI VF styles for components that use React Select */
+    #target input {
+      height: unset;
+      box-shadow: none;
+      margin: 0;
+    }
+    /* Fix for Highcharts tooltip being clipped */
+    .highcharts-container {
+      overflow: visible !important;
+    }
+    svg {
+      overflow: visible !important;
+    }
 
-      /* Fix for Highcharts tooltip being clipped */
-      .highcharts-container {
-          overflow: visible !important;
-      }
-      svg {
-          overflow: visible !important;
-      }
-
-      /* Match margin set by React-Select components */
-      .gene-search-container {
-          margin-bottom: 1rem;
-      }
-    </style>
+    /* Match margin set by React-Select components */
+    .gene-search-container {
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 
 <body>
-<div id="tsne-widget" class="row">
-    <div id="content" class="small-12 columns">
-        <div id="target">
-        </div>
-    </div>
-</div>
+  <div class="row column">
+    <div id="target"></div>
+  </div>
 </body>
 
 <script defer src="../dist/vendors.bundle.js"></script>
@@ -45,9 +42,16 @@
 <script>
   document.addEventListener('DOMContentLoaded', function(event) {
     TSnePlotWidgetDemo.render({
-      experimentAccession: 'E-MTAB-5061',
+      atlasUrl: 'http://wp-p2m-8e:8080/gxa/sc/',
+      experimentAccession: 'E-ENAD-15',
       geneId: 'ENSMUSG00000041147'
     }, 'target')
+
+    // atlasUrl: 'http://wp-p2m-8e:8080/gxa/sc/',
+    // TSnePlotWidgetDemo.render({
+    //   experimentAccession: 'E-MTAB-5061',
+    //   geneId: 'ENSMUSG00000041147'
+    // }, 'target')
   })
 </script>
 
