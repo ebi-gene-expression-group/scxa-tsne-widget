@@ -1,7 +1,7 @@
 # Single Cell Expression Atlas t-SNE widget
 [![Build Status](https://travis-ci.com/ebi-gene-expression-group/scxa-tsne-widget.svg?branch=master)](https://travis-ci.com/ebi-gene-expression-group/scxa-tsne-widget) [![Coverage Status](https://coveralls.io/repos/github/ebi-gene-expression-group/scxa-tsne-widget/badge.svg?branch=master)](https://coveralls.io/github/ebi-gene-expression-group/scxa-tsne-widget?branch=master)
 
-An easy-to-embed React component to visualise t-SNE plots from Single Cell Expression Atlas.
+An easy-to-embed React component to visualise t-SNE plots from [Single Cell Expression Atlas](https://www.ebi.ac.uk/gxa/sc).
 
 # Build and test
 1. Install dependencies with NPM or your package manager of choice.
