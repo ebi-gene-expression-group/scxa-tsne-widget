@@ -51,7 +51,7 @@ where to mount the component plus an options object that encapsulates the props 
 ### Bundling
 After installing dependencies run Webpack to create your JS bundles: `npx webpack -p`*
 
-* `-p` creates production bundles, without console messages. Replace it with `-d` if you want to see more nitty-gritty
+\* `-p` creates production bundles, without console messages. Replace it with `-d` if you want to see more nitty-gritty
   details
 
 You will need to include these two JS scripts in your page:
