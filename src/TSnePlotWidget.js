@@ -56,7 +56,7 @@ class TSnePlotWidget extends React.Component {
 
   _fetchAndSetStateMetadata(
     {atlasUrl, experimentAccession}) {
-    const resource = `json/experiments/${experimentAccession}/metadata`
+    const resource = `json/experiments/${experimentAccession}/metadata/tsneplot`
 
     this._fetchAndSetState(
       resource, atlasUrl, `plotdata`, `metadataErrorMessage`, `loadingMetadata`) // this will work once backend code is merged in sc atlas. In meantime, it will not fetch metadata option as there is no endpoint currently in sc atlas
