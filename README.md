@@ -3,6 +3,8 @@
 
 An easy-to-embed React component to visualise t-SNE plots from [Single Cell Expression Atlas](https://www.ebi.ac.uk/gxa/sc).
 
+![SCEA t-SNE widget screenshot](https://github.com/ebi-gene-expression-group/scxa-tsne-widget/blob/1.0-rc1/html/washed-screenshot.png)
+
 # Build and test
 1. Install dependencies with NPM or your package manager of choice.
 2. `npx webpack-dev-server`
