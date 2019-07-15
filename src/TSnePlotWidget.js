@@ -107,10 +107,8 @@ class TSnePlotWidget extends React.Component {
             }
             showControls={false} // flag to control weather controls over tsne plots are shown or not
           />
-          <p>To know more about this experiment please go to
-            <a target={`_blank`} href={`https://www.ebi.ac.uk/gxa/sc/experiments/${experimentAccession}`}>
-              Single Cell Expression Atlas
-            </a>.
+          <p>
+            To know more about this experiment please go to <a target={`_blank`} href={`https://www.ebi.ac.uk/gxa/sc/experiments/${experimentAccession}`}>Single Cell Expression Atlas </a>.
           </p>
         </React.Fragment>
     )
