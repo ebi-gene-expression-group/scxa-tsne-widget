@@ -69,8 +69,8 @@ You will need to include these two JS scripts in your page:
 </script>
 ```
 
-See how this looks on
-[our example](`https://github.com/ebi-gene-expression-group/scxa-tsne-widget/blob/master/html/index.html`).
+You can see how this looks on
+[our example page](https://github.com/ebi-gene-expression-group/scxa-tsne-widget/blob/master/html/index.html).
 
 # Caveats
 ## Highcharts
