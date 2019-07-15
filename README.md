@@ -11,9 +11,8 @@ An easy-to-embed React component to visualise t-SNE plots from Single Cell Expre
 
 # API
 ## React
-If you install the component through your package manager of choice and include it as a React component, you need to
-specify two props to determine what combination of experiment/gene to display. Additionally, there are a few optional
-props to customise the presentation and layout.
+If you include it as a React component, you need to specify two props to determine what combination of experiment/gene to
+display. Additionally, there are a few optional props to customise the presentation and layout.
 
 ### Required props
 |         Name        |   Type   |                             Comment                                  |
@@ -27,7 +26,7 @@ props to customise the presentation and layout.
 | wrapperClassName        | `string` | `row expanded`             | Wrapper class from the [EBI Visual Framework](https://github.com/ebiwd/EBI-Framework) (a [Foundation](https://foundation.zurb.com/sites.html) flavour) that takes all available horizontal space |
 | clusterPlotClassName    | `string` | `small-12 large-6 columns` | Grid settings that uses half width in small and medium-sized screens and half width in large screens |
 | expressionPlotClassName | `string` | `small-12 large-6 columns` | |
-| height                  | `number` | 800                        | |
+| height                  | `number` | 800                        | Height of the plot area (minus the legend) |
 
 ### Example
 ```jsx
