@@ -26,7 +26,7 @@ display. Additionally, there are a few optional props to customise the presentat
 | wrapperClassName        | `string` | `row expanded`             | Wrapper class from the [EBI Visual Framework](https://github.com/ebiwd/EBI-Framework) (a [Foundation](https://foundation.zurb.com/sites.html) flavour) that takes all available horizontal space |
 | clusterPlotClassName    | `string` | `small-12 large-6 columns` | Grid settings that uses half width in small and medium-sized screens and half width in large screens |
 | expressionPlotClassName | `string` | `small-12 large-6 columns` | |
-| height                  | `number` | 800                        | |
+| height                  | `number` | 800                        | Height of the plot area (minus the legend) |
 
 ### Example
 ```jsx
