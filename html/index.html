@@ -38,20 +38,12 @@
 <script defer src="../dist/vendors.bundle.js"></script>
 <script defer src="../dist/TSnePlotWidgetDemo.bundle.js"></script>
 
-<!-- Set to http://localhost:8080/gxa/ or http://localhost:8080/gxa_sc/ -- Remember the trailing slash! -->
 <script>
   document.addEventListener('DOMContentLoaded', function(event) {
     TSnePlotWidgetDemo.render({
-      atlasUrl: 'http://wp-p2m-8e:8080/gxa/sc/',
       experimentAccession: 'E-ENAD-15',
       geneId: 'ENSMUSG00000041147'
-    }, 'target')
-
-    // atlasUrl: 'http://wp-p2m-8e:8080/gxa/sc/',
-    // TSnePlotWidgetDemo.render({
-    //   experimentAccession: 'E-MTAB-5061',
-    //   geneId: 'ENSMUSG00000041147'
-    // }, 'target')
+    }, 'target');
   })
 </script>
 
