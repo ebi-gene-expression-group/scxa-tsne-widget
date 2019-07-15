@@ -130,7 +130,7 @@ TSnePlotWidget.propTypes = {
 
 
 TSnePlotWidget.defaultProps = {
-  atlasUrl: `http://localhost:8080/gxa/sc/`,      //no options will be shown until new metadata endpoint is implemented in prod/ to test change it to localhost
+  atlasUrl: `https://www.ebi.ac.uk/gxa/sc/`,
   suggesterEndpoint: `json/suggestions`,
   wrapperClassName: `row expanded`,
   clusterPlotClassName: `small-12 large-6 columns`,
