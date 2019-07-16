@@ -1,4 +1,4 @@
-# Single Cell Experssion Atlas t-SNE widget
+# Single Cell Expression Atlas t-SNE widget
 [![Build Status](https://travis-ci.com/ebi-gene-expression-group/scxa-tsne-widget.svg?branch=master)](https://travis-ci.com/ebi-gene-expression-group/scxa-tsne-widget) [![Coverage Status](https://coveralls.io/repos/github/ebi-gene-expression-group/scxa-tsne-widget/badge.svg?branch=master)](https://coveralls.io/github/ebi-gene-expression-group/scxa-tsne-widget?branch=master)
 
 An easy-to-embed React component to visualise t-SNE plots from Single Cell Expression Atlas.
@@ -11,7 +11,7 @@ An easy-to-embed React component to visualise t-SNE plots from Single Cell Expre
 
 # API
 ## React
-If you include it as a React component, you need to specify two props to determine what combination of experiment/gene to
+If you include it as a React component, you need to specify two props to determine what combination of experiment-gene to
 display. Additionally, there are a few optional props to customise the presentation and layout.
 
 ### Required props
@@ -24,7 +24,7 @@ display. Additionally, there are a few optional props to customise the presentat
 |           Name          |   Type   |         Default value      | Comment |
 | ----------------------- | -------- | -------------------------- | ------- |
 | wrapperClassName        | `string` | `row expanded`             | Wrapper class from the [EBI Visual Framework](https://github.com/ebiwd/EBI-Framework) (a [Foundation](https://foundation.zurb.com/sites.html) flavour) that takes all available horizontal space |
-| clusterPlotClassName    | `string` | `small-12 large-6 columns` | Grid settings that uses half width in small and medium-sized screens and half width in large screens |
+| clusterPlotClassName    | `string` | `small-12 large-6 columns` | Grid settings that use half width in small and medium-sized screens and half width in large screens |
 | expressionPlotClassName | `string` | `small-12 large-6 columns` | |
 | height                  | `number` | 800                        | Height of the plot area (minus the legend) |
 
@@ -90,11 +90,6 @@ input {
 }
 svg {
   overflow: visible !important;
-}
-
-/* Match margin set by React Select component */
-.gene-search-container {
-  margin-bottom: 1rem;
 }
 ```
 
