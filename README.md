@@ -93,11 +93,6 @@ input {
 svg {
   overflow: visible !important;
 }
-
-/* Match margin set by React Select component */
-.gene-search-container {
-  margin-bottom: 1rem;
-}
 ```
 
 ## EBI Visual Framework
