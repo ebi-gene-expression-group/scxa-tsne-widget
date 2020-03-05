@@ -6,4 +6,4 @@ const render = (options, target) => {
   ReactDOM.render(<TSnePlotWidget {...options} />, document.getElementById(target))
 }
 
-export {render}
+export { render }

@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TSnePlotWidget matches snapshot 1`] = `
+Array [
+  <div
+    className="row expanded"
+  >
+    <div
+      className="small-12 large-6 columns"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="small-12 medium-6 columns"
+        >
+          <label>
+            Colour plot by:
+          </label>
+          <div
+            className=" css-2b097c-container"
+            onKeyDown={[Function]}
+          >
+            <div
+              className=" css-tinoic"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-1hwfws3"
+              >
+                <div
+                  className=" css-1wa3eu0-placeholder"
+                >
+                  Select...
+                </div>
+                <div
+                  className="css-1g6gooi"
+                >
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-4-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className=" css-1wy0on6"
+              >
+                <span
+                  className="sc-bdVaJa hUYIaS"
+                  cx={[Function]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row text-center scxa-error"
+      >
+        <p>
+          ReferenceError: fetch is not defined
+        </p>
+      </div>
+    </div>
+    <div
+      className="small-12 large-6 columns"
+    >
+      <div
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
+      >
+        <div
+          className="row margin-bottom-large"
+        >
+          <label>
+            Gene ID, gene name or gene feature
+          </label>
+          <div
+            style={
+              Object {
+                "display": "",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              aria-expanded={false}
+              autoComplete="off"
+              name="geneId"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              role="combobox"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="row text-center scxa-error"
+      >
+        <p>
+          ReferenceError: fetch is not defined
+        </p>
+      </div>
+    </div>
+  </div>,
+  <p>
+    To know more about this experiment please go to 
+    <a
+      href="https://www.ebi.ac.uk/gxa/sc/experiments/E-MTAB-5061"
+      target="_blank"
+    >
+      Single Cell Expression Atlas 
+    </a>
+    .
+  </p>,
+]
+`;

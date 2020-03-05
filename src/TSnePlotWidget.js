@@ -56,7 +56,7 @@ class TSnePlotWidget extends React.Component {
 
   _fetchAndSetStateMetadata(
     {atlasUrl, experimentAccession}) {
-    const resource = `json/experiments/${experimentAccession}/metadata`
+    const resource = `json/experiments/${experimentAccession}/metadata/tsneplot`
 
     this._fetchAndSetState(
       resource, atlasUrl, `plotdata`, `metadataErrorMessage`, `loadingMetadata`) // this will work once backend code is merged in sc atlas. In meantime, it will not fetch metadata option as there is no endpoint currently in sc atlas
@@ -74,7 +74,6 @@ class TSnePlotWidget extends React.Component {
   }
 
   render() {
-
     const {height, atlasUrl, suggesterEndpoint} = this.props
     const {wrapperClassName, clusterPlotClassName, expressionPlotClassName} = this.props
     const {geneId, speciesName, ks, experimentAccession} = this.props
@@ -86,35 +85,32 @@ class TSnePlotWidget extends React.Component {
     return (
       loadingMetadata ?
         <p className={`row column loading-message`}>Loading, please wait…</p> :
-        <div>
-          <div>
-            <TSnePlotView
-              atlasUrl={atlasUrl}
-              suggesterEndpoint={suggesterEndpoint}
-              wrapperClassName={wrapperClassName}
-              clusterPlotClassName={clusterPlotClassName}
-              expressionPlotClassName={expressionPlotClassName}
-              speciesName={speciesName}
-              experimentAccession={experimentAccession}
-              ks={ks} // for future use
-              metadata={metadata}
-              selectedColourBy={selectedColourBy} // used default k value as we are not showing widget controls for now
-              selectedColourByCategory={selectedColourByCategory} // Is the plot coloured by clusters or metadata (as we not showing controls so used 'clusters' as default selected category
-              perplexities={perplexities}
-              selectedPerplexity={perplexitiesOrdered[Math.round((perplexitiesOrdered.length - 1) / 2)]} //default value given for now
-              geneId={geneId}
-              height={height}
-              onChangeColourBy={(colourByCategory, colourByValue) =>
-                this._onChangeColourBy(colourByCategory, colourByValue)
-              }
-              showControls={false} // flag to control weather controls over tsne plots are shown or not
-            />
-          </div>
-          <div>
-            To know more about this experiment go to <a target={`_blank`} href={`https://www.ebi.ac.uk/gxa/sc/experiments/` + experimentAccession}> Single
-            Cell Expression Atlas</a>
-          </div>
-        </div>
+        <React.Fragment>
+          <TSnePlotView
+            atlasUrl={atlasUrl}
+            suggesterEndpoint={suggesterEndpoint}
+            wrapperClassName={wrapperClassName}
+            clusterPlotClassName={clusterPlotClassName}
+            expressionPlotClassName={expressionPlotClassName}
+            speciesName={speciesName}
+            experimentAccession={experimentAccession}
+            ks={ks} // for future use
+            metadata={metadata}
+            selectedColourBy={selectedColourBy} // used default k value as we are not showing widget controls for now
+            selectedColourByCategory={selectedColourByCategory} // Is the plot coloured by clusters or metadata (as we not showing controls so used 'clusters' as default selected category
+            perplexities={perplexities}
+            selectedPerplexity={perplexitiesOrdered[Math.round((perplexitiesOrdered.length - 1) / 2)]} //default value given for now
+            geneId={geneId}
+            height={height}
+            onChangeColourBy={(colourByCategory, colourByValue) =>
+              this._onChangeColourBy(colourByCategory, colourByValue)
+            }
+            showControls={false} // flag to control weather controls over tsne plots are shown or not
+          />
+          <p>
+            To know more about this experiment please go to <a target={`_blank`} href={`https://www.ebi.ac.uk/gxa/sc/experiments/${experimentAccession}`}>Single Cell Expression Atlas </a>.
+          </p>
+        </React.Fragment>
     )
   }
 }
@@ -134,7 +130,7 @@ TSnePlotWidget.propTypes = {
 
 
 TSnePlotWidget.defaultProps = {
-  atlasUrl: `http://localhost:8080/gxa/sc/`,      //no options will be shown until new metadata endpoint is implemented in prod/ to test change it to localhost
+  atlasUrl: `https://www.ebi.ac.uk/gxa/sc/`,
   suggesterEndpoint: `json/suggestions`,
   wrapperClassName: `row expanded`,
   clusterPlotClassName: `small-12 large-6 columns`,
